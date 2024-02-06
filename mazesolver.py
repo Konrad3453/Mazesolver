@@ -307,7 +307,7 @@ def main():
         print("maze can not be solved!")
     else:
         end = time.time()
-        print("maze solved in ", start - end)
+        print("maze solved in ", end - start)
     win.wait_for_close()
 
 
