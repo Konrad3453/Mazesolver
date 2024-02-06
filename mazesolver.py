@@ -299,9 +299,9 @@ def main():
 
     sys.setrecursionlimit(10000)
     win = Window(screen_x, screen_y)
-    start = time.time()
     maze = Maze(margin, margin, num_rows, num_cols, cell_size_x, cell_size_y, win, 12)
     print("maze created")
+    start = time.time()
     is_solveable = maze.solve()
     if not is_solveable:
         print("maze can not be solved!")
